@@ -1,0 +1,35 @@
+# Program to find the largest of three numbers
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+
+if num1 >= num2 and num1 >= num3:
+    largest = num1
+elif num2 >= num1 and num2 >= num3:
+    largest = num2
+else:
+    largest = num3
+
+print("The largest number is:", largest)# Program to assign grade based on marks using if...elif...else
+
+marks = int(input("Enter marks obtained: "))
+
+if marks >= 90 and marks <= 100:
+    grade = "O"
+elif marks >= 80 and marks <= 89:
+    grade = "A+"
+elif marks >= 70 and marks <= 79:
+    grade = "A"
+elif marks >= 60 and marks <= 69:
+    grade = "B"
+elif marks >= 50 and marks <= 59:
+    grade = "C"
+elif marks >= 40 and marks <= 49:
+    grade = "P"
+elif marks < 39:
+    grade = "F"
+else:
+    grade = "Invalid marks"
+
+print("Grade assigned:", grade)
